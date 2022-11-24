@@ -17,6 +17,12 @@ use App\Http\Controllers\FormController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/tugas', function () {
+    return view('tugas');
+});
+Route::get('/tugasUTS', function () {
+    return view('tugasUTS');
+});
 
 Route::get('/formSend',[FormController::class,'index']);
 Route::post('/formSend',[FormController::class,'store']);
